@@ -67,6 +67,65 @@ border-radius: 50%;
 </style>
 
 <head>
+<style>
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #ffffff;
+}
+
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+background-color: black;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+</style>
   <title>
     我是谁?
   </title>
@@ -80,11 +139,39 @@ div {
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=.9">
+
+<script>
+function changeit() {
+
+var shortget = document.getElementsByTagName("body")[0];
+var aaa = shortget.style.backgroundColor;
+    
+if (aaa == "black") {
+document.getElementById("myDivID").style.backgroundColor="white";
+document.getElementById("myDivID").style.color="black";
+
+} else {
+document.getElementById("myDivID").style.backgroundColor="black";
+document.getElementById("myDivID").style.color="white";
+
+}
+    
+}
+</script>
+
 </head>
 
 
-<body>
+<body id="myDivID">
+<div class="city">
 
+<label class="switch">
+  <input type="checkbox" onchange="changeit()">
+
+  <span class="slider round"></span>
+</label>
+
+</div>
 
 <div class="city">
 <div class="town" >
