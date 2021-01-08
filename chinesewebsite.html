@@ -93,6 +93,23 @@ div {
 <div class="town" >
 <p>中文</p>
 </div>
+<script>
+function doDate()
+{
+    var str = "";
+
+    var days = new Array("星期天", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六");
+    var months = new Array("1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月");
+
+    var now = new Date();
+
+    str += days[now.getDay()] + ", " + months[now.getMonth()] + "" + now.getDate() + "日" + now.getFullYear() + ", " + now.getHours() +":" + now.getMinutes() + ":" + now.getSeconds();
+    document.getElementById("todaysDate").innerHTML = str;
+}
+
+setInterval(doDate, 1000);
+  </script>
+<div id="todaysDate"></div>
 </div>
 
 
