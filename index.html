@@ -163,7 +163,29 @@ document.getElementById("myDivID").style.color="white";
     
 }
 </script>
+<style>
+.collapsible {
+  background-color: transparent;
+  color: #4a86f5;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+}
 
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: transparent;
+ 
+}
+</style>
 
 </head>
 
@@ -211,6 +233,35 @@ setInterval(doDate, 1000);
 <h1 >About Me</h1>
 <img id="round" src="selfie.png" width="150" height="150">
 <p id="Special"><a href="weibanghuang.pdf"><i>Résumé</i></a></p>
+
+<button class="collapsible">"I am always doing something."</button>
+
+
+<div class="content">
+  <p >My name is WeiBang Huang.</p>
+<p>During my undergraduate journey, I was involved with Undergraduate Teaching Assistantships, Stony Brook Martial Arts Association, Stony Brook Ultimate Frisbee Club Team, and Stony Brook Residential Safety Program.</p>
+<p>After graduation, I am currently studying for the Actuarial P Exam and enrolled in a Stanford Machine Learning course. </p>
+<p>On the off side, I play guitar, beatbox, and create music/go hiking with my friends. </p>
+</div>
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
 
 </div>
 
