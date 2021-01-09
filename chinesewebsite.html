@@ -162,7 +162,29 @@ document.getElementById("myDivID").style.color="white";
     
 }
 </script>
+<style>
+.collapsible {
+  background-color: transparent;
+  color: #4a86f5;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+}
 
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: transparent;
+ 
+}
+</style>
 </head>
 
 
@@ -208,7 +230,37 @@ setInterval(doDate, 1000);
 <h1 >关于我</h1>
 <img id="round" src="selfie.png" width="150" height="150">
 <p id="Special" ><a href="weibanghuang.pdf"><i>个人简历</i></a></p>
+<button class="collapsible">"<span style="font-family:Noto Serif SC;">我总是在做事情</span>"</button>
 
+
+<div class="content">
+ 
+<p>
+在我的大学旅途中, 我参与了本科助教，石溪武术协会，石溪飞盘俱乐部团队，和石溪住宅安全程序。 
+</p>
+<p>毕业后， 我目前在复习着精算P考试和已注册了斯坦福大学机器学习课程。
+</p>
+<p>有空的时候，我喜欢弹吉他，beatbox, 和与朋友制造音乐，远足。</p>
+</div>
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
 </div>
 
 
