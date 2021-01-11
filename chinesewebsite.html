@@ -66,13 +66,11 @@ p {
     padding : 0;
     margin : 0;
 }
-#round{
-border-radius: 50%;
-display: block;
-}
+
 </style>
 
 <head>
+
 <style>
 .flip-container {
 	perspective: 1000px;
@@ -195,10 +193,12 @@ var aaa = shortget.style.backgroundColor;
 if (aaa == "black") {
 document.getElementById("myDivID").style.backgroundColor="white";
 document.getElementById("myDivID").style.color="black";
+document.getElementById("back_img").src = "../weibang/sig_black.png";
 
 } else {
 document.getElementById("myDivID").style.backgroundColor="black";
 document.getElementById("myDivID").style.color="white";
+document.getElementById("back_img").src = "../weibang/sig_white.png";
 
 }
     
@@ -225,6 +225,12 @@ document.getElementById("myDivID").style.color="white";
   transition: max-height 0.2s ease-out;
   background-color: transparent;
  
+}
+</style>
+<style>
+img {
+  border-radius: 50%;
+display=block;
 }
 </style>
 </head>
@@ -273,10 +279,10 @@ setInterval(doDate, 1000);
 <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
 	<div class="flipper">
 		<div class="front">
-			<img id="round" src="selfie.png" width="150" height="150">
+			<img id="front_img" src="../weibang/selfie.png" width="150" height="150">
 		</div>
 		<div class="back">
-			<img id="round" src="selfie2.png" width="150" height="150">
+			<img id="back_img" src="../weibang/sig_black.png" width="150" height="150">
 		</div>
 	</div>
 </div>
