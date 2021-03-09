@@ -1,352 +1,110 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#home" class="navbar__links" id="home-page">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links" id="about-page">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#projects" class="navbar__links" id="projects-page">Projects</a
+            >
+            </li>   
+        </ul>
+      </div>
+    </nav>
 
-<style>
-@font-face {
-  font-family:EB Garamond;
-src: url("../weibang/Garamond.ttf") format('truetype');
-}
-@font-face {
-  font-family:Chomsky;
-src: url("../weibang/Chomsky.otf") format('truetype');
-}
-@font-face {
- font-family:Noto Serif SC;
-src: url("../weibang/NotoSerifSC-ExtraLight.otf") format('truetype');
-}
-
-.city {
-  border-radius:0px;
-  Text-align: center;
-font-family:EB Garamond;
-display: block;
-margin-left: auto;
-  margin-right: auto;
-Width:auto;
-}
-.city:after {
-  content: '';
-  display: block;
-  border-top: 1px solid #E9E9E9;
-  margin-top: 0.5em;
-
-}
-.town{
-font-family:EB Garamond;
-display: inline-block;
-}
-h1 {font-family:Chomsky;}
-
-a:link {
-  color: #4a86f5;
-  background-color: transparent;
-  text-decoration: none;
-}
-a:visited {
-  color: #4a86f5;
-  background-color: transparent;
-  text-decoration: none;
-}
-a:hover {
-  color: #4a86f5;
-  background-color: transparent;
-  text-decoration: underline;
-}
-a:active {
-  color: blue;
-  background-color: transparent;
-  text-decoration: underline;
-}
-#Special{
-color: gray;
-padding : 0;
-margin : 0;
-}
-p {
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+      <div class="hero__container">
+        <p class="hero__description">System.out.println("Hello World!");</p>
+        <h1 class="hero__heading">I am<span> WeiBang.</span></h1>
    
-    padding : 0;
-    margin : 0;
-}
+          <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/weibanghuang/" class="social__icon--link"><i class="fab fa-linkedin"> weibanghuang</i></a>
+            </div>
+            <div class="footer__link--items">
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/weibanghuang" class="social__icon--link"><i class="fab fa-github"> weibanghuang</i></a>
+            </div>
+            <div class="footer__link--items">
+              <a target="_blank" rel="noopener noreferrer" href="weibanghuang.pdf" class="social__icon--link"><i class="fas fa-file-pdf"></i> resume</i></a>
+            </div>
+          </div>
+      
+        
+      </div>
+      <!-- Footer Section -->
+      
 
+    </div>
 
-</style>
-
-<head>
-<style>
-.flip-container {
-	perspective: 1000px;
-}
-	/* flip the pane when hovered */
-	.flip-container:hover .flipper, .flip-container.hover .flipper {
-		transform: rotateY(180deg);
-	}
-
-.flip-container, .front, .back {
-	width: 150px;
-	height: 150px;
-margin-left: auto;
-  margin-right: auto;
-
-}
-
-/* flip speed goes here */
-.flipper {
-	transition: 0.80s;
-	transform-style: preserve-3d;
-
-	position: relative;
-}
-
-/* hide back of pane during swap */
-.front, .back {
-	backface-visibility: hidden;
-
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
-/* front pane, placed above back */
-.front {
-	z-index: 2;
-	/* for firefox 31 */
-	transform: rotateY(0deg);
-}
-
-/* back, initially hidden pane */
-.back {
-	transform: rotateY(180deg);
-}
-</style>
-<style>
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-
-.switch input { 
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #000000;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: #ffffff;
-}
-
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-background-color: black;
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-</style>
-  <title>
-    Who Am I?
-  </title>
-
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=.9">
-
-<script>
-function changeit() {
-
-var shortget = document.getElementsByTagName("body")[0];
-var aaa = shortget.style.backgroundColor;
+    <!-- About Section -->
+    <div class="main" id="about">
+      <div class="main__container">
+        <div class="main__img--container">
+          <div class="main__img--card"></i></div>
+        </div>
+        <div class="main__content">
+          <h1>My name is WeiBang Huang.</h1>
+          <h2>Stony Brook University 2020</h2>
+          <p>Applied Mathematics and Statistics, B.S</p>
+          <p>Information Systems, B.S</p>
+          <p>I was involved with Undergraduate Teaching Assistantships, Stony Brook Martial Arts Association, Stony Brook Ultimate Frisbee Club Team, and Stony Brook Residential Safety Program.</p>
+        </div>
+      </div>
+    </div>
     
-if (aaa == "black") {
-document.getElementById("myDivID").style.backgroundColor="white";
-document.getElementById("myDivID").style.color="black";
-document.getElementById("back_img").src = "../weibang/sig_black.png";
-} else {
-document.getElementById("myDivID").style.backgroundColor="black";
-document.getElementById("myDivID").style.color="white";
-document.getElementById("back_img").src = "../weibang/sig_white.png";
-
-}
     
-}
-</script>
-<style>
-.collapsible {
-  background-color: transparent;
-  color: #4a86f5;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: center;
-  outline: none;
-  font-size: 15px;
-}
+    <!-- Projects Section -->
+    <div class="projects" id="projects">
+      <h1>PERSONAL PROJECTS</h1>
+      <div class="projects__wrapper">
+        <div class="projects__card">
+          <h2>Online Multiplayer Tic Tac Toe Android Game</h2>
+          <p>Java/xml</p>
+          <div class="projects__btn"><button><a target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=com.weibang.nbyn" class="social__icon--link">View</a></button></div>
+        </div>
+        <div class="projects__card">
+          <h2>Data Mining NBA Performance Charts</h2>
+          <p>Python/SQL/html/css</p>
+          <div class="projects__btn"><button><a target="_blank" rel="noopener noreferrer" href="https://weibang-project.herokuapp.com/" class="social__icon--link">View</a></button></div>
+        </div>
+        <div class="projects__card">
+          <h2>Data Mining NBA Player Comparison</h2>
+          <p>Python/SQL/html/css</p>
+          <div class="projects__btn"><button><a target="_blank" rel="noopener noreferrer" href="https://weibang-nba.herokuapp.com/" class="social__icon--link">View</a></button></div>
+        </div>
+        <div class="projects__card">
+          <h2>DNA/RNA Translator</h2>
+          <p>Python/html/css</p>
+          <div class="projects__btn"><button><a target="_blank" rel="noopener noreferrer" href="https://dna-rna-sequencer.herokuapp.com/" class="social__icon--link">View</a></button></div>
+        </div>
+      </div>
 
 
-.content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: transparent;
- 
-}
-</style>
-<style>
-img {
-  border-radius: 50%;
-display=block;
-}
-</style>
-<link rel="icon" href="../weibang/selfie.png">
-</head>
-
-
-<body id="myDivID">
-<div class="city">
-
-<label class="switch">
-  <input type="checkbox" onchange="changeit()">
-
-  <span class="slider round"></span>
-</label>
-
-</div>
-<div class="city" >
-<div class="town" >
-<p>English</p>
-</div>
-<div class="town" >
-<p style="font-family:NotoSerif SC"><a href="chinesewebsite.html">中文</a></p>
-
-</div>
-
-
-<script>
-function doDate()
-{
-    var str = "";
-
-    var days = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
-    var months = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
-
-    var now = new Date();
-
-    str += days[now.getDay()] + ", " + months[now.getMonth()] + " " + now.getDate() + " " + now.getFullYear() + ", " + now.getHours() +":" + now.getMinutes() + ":" + now.getSeconds();
-    document.getElementById("todaysDate").innerHTML = str;
-}
-
-setInterval(doDate, 1000);
-  </script>
-<div id="todaysDate"></div>
-</div>
-
-<div class="city" >
-<h1 >About Me</h1>
-
-<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-	<div class="flipper">
-		<div class="front">
-			<img id="front_img" src="../weibang/selfie.png" width="150" height="150">
-		</div>
-		<div class="back">
-			<img id="back_img" src="../weibang/sig_black.png" width="150" height="150">
-		</div>
-	</div>
-</div>
-
-<button class="collapsible">"<span style="font-family: EB Garamond;">I am always trying something new.</span>"</button>
-
-
-<div class="content">
- 
-<p>During my undergraduate journey, I was involved with Undergraduate Teaching Assistantship, 
-</p>
-<p>Stony Brook Martial Arts Association, Stony Brook Ultimate Frisbee Club Team, and </p>
-<p>Stony Brook Residential Safety Program.</p>
-<p>After graduation, I am currently studying for the Actuarial P Exam and enrolled in a Stanford Machine Learning course. </p>
-<p>On the off side, I play guitar, beatbox, and create music/go hiking with my friends. </p>
-</div>
-
-
-
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-  });
-}
-</script>
-
-</div>
-
-
-<div class="city">
-<h2 ><i>WeiBang Huang</i></h2>
-<p>Stony Brook University</p>
-<p>Class of 2020</p>
-<p>Applied Math and Statistics, B.S</p>
-<p>Information Systems, B.S</p>
-</div>
-
-<div class="city">
-<h2 ><i>Projects</i></h2>
-<p>Java/xml: <a href="https://play.google.com/store/apps/details?id=com.weibang.nbyn" target="_blank">Online Multiplayer Tic Tac Toe Android Application</a></p>
-<p>Python/SQL/html/css: <a href="https://weibang-project.herokuapp.com/" target="_blank">Data Mining NBA Performance Charts</a></p>
-<p>Python/SQL/html/css: <a href="https://weibang-nba.herokuapp.com/" target="_blank">Data Mining NBA Player Comparison</a></p>
-<p>Python/html/css: <a href="https://dna-rna-sequencer.herokuapp.com/" target="_blank">DNA/RNA Translator</a></p>
-</div>
-
-<div class="city">
-<h2 ><i>Contact Me</I></h2>
-<p>Email: weibangh98@gmail.com</p>
-<p>GitHub: <a href="https://github.com/weibanghuang" target="_blank">weibanghuang</a></p>
-<p>LinkedIn: <a href="https://www.linkedin.com/in/weibanghuang/" target="_blank">weibanghuang</a></p>
-<p>Résumé: <a href="weibanghuang.pdf">pdf</a></p>
-</div>
-
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
