@@ -402,7 +402,9 @@
     background: linear-gradient(to right, #161616, #000000);
     padding: 100px 0px 200px;
   }
-
+  .projects h1 {
+    align-items: center;
+  }
   .main__container {
     display: grid;
     grid-template-columns: 1fr;
@@ -444,6 +446,11 @@
 }
 
 @media screen and (max-width: 480px) {
+  .hero {
+    background: #000000;
+    background: linear-gradient(to right, #161616, #000000);
+    padding: 100px 0px 200px;
+  }
   .main__img--card {
     width: 300px;
     height: 300px;
