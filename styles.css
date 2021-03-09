@@ -404,6 +404,7 @@
   }
   .projects h1 {
     align-items: center;
+    font-size: 20px;
   }
   .main__container {
     display: grid;
@@ -467,6 +468,7 @@
   }
   .projects h1 {
     align-items: center;
+    font-size: 20px;
   }
   .main__content h2 {
     font-size: 2rem;
