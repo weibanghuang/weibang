@@ -541,6 +541,7 @@
 
 .projects__card h2 {
   text-align: center;
+  
 }
 
 .projects__card p {
@@ -553,6 +554,7 @@
   display: flex;
   justify-content: center;
   margin-top: 16px;
+  
 }
 
 .projects__card button {
@@ -561,7 +563,18 @@
   border: none;
   outline: none;
   border-radius: 4px;
-  background: #131313;
+  background: #131313; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #292929,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #292929,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
   font-size: 1rem;
 }
 
