@@ -453,8 +453,7 @@
     margin-top: 3rem;
   }
   .projects h1 {
-    font-size: 2rem;
-    margin-top: 3rem;
+    align-items: center;
   }
   .main__content h2 {
     font-size: 2rem;
