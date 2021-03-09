@@ -503,6 +503,8 @@
   -moz-text-fill-color: transparent;
   margin-bottom: 5rem;
   font-size: 2.5rem;
+  align-items: center;
+
 }
 
 .projects__wrapper {
