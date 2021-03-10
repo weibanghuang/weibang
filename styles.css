@@ -188,7 +188,7 @@
 .hero {
   background: #000000;
   background: linear-gradient(to right, #161616, #000000);
-  padding: 200px 0px;
+  padding: 300px 0px 300px;
 }
 
 .hero__container {
@@ -287,9 +287,9 @@
 }
 
 .main__content h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   background-color: #fe3b6f;
-  background-image: linear-gradient(to top, #ff6a00,
+  background-image: linear-gradient(to right, #ff6a00,
   #ee0979);
   background-size: 100%;
   -webkit-background-clip: text;
@@ -497,14 +497,14 @@
 
 .projects h1 {
   background-color: #ff8177;
-  background-image: linear-gradient(to right, #ff0844 0%, #f7673c 100%);
+  background-image: linear-gradient(to right, #ff6a00, #ee0979 );
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   margin-bottom: 5rem;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 
 }
 
@@ -562,17 +562,19 @@
   padding: 14px 24px;
   border: none;
   outline: none;
-  border-radius: 4px;
+  border-radius: 20px;
   background: #131313; /* fallback for old browsers */
   background: -webkit-linear-gradient(
-    to right,
-    #292929,
-    #000000
+    to bottom right,
+    #000000,
+    #5e5e5e
+    
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    to right,
-    #292929,
-    #000000
+    to bottom right,
+    #000000,
+    #5e5e5e
+    
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
   font-size: 1rem;
