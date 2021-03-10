@@ -28,7 +28,20 @@
   margin: 0 auto;
   padding: 0 50px;
 }
-
+#navbar__logo {
+  background-color: #ff8177;
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+}
 
 .navbar__menu {
   display: flex;
@@ -124,7 +137,7 @@
   }
 
   #navbar__logo {
-    padding-left: 25px;
+  padding-left: 25 px;
   }
 
   .navbar__toggle .bar {
@@ -188,7 +201,7 @@
 .hero {
   background: #000000;
   background: linear-gradient(to right, #161616, #000000);
-  padding: 300px 0px 300px;
+  padding: 200px 0px 300px;
 }
 
 .hero__container {
