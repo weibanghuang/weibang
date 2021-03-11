@@ -5,7 +5,6 @@
   font-family: 'Kumbh Sans', sans-serif;
   scroll-behavior: smooth;
 }
-
 .navbar {
   background: #131313;
   height: 80px;
@@ -220,7 +219,22 @@
   font-size: 100px;
   margin-bottom: 24px;
   color: #fff;
+  background: -webkit-linear-gradient(
+    to top right,
+    #252525,
+    #ffffff 40%
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top right,
+    #252525,
+    #ffffff 40%
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
+
 
 .hero__heading span {
   background: #ee0979; /* fallback for old browsers */
@@ -238,7 +252,7 @@
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -mo-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 .hero__description {
   font-size: 60px;
@@ -303,7 +317,7 @@
 .main__content h1 {
   font-size: 2.5rem;
   background-color: #fe3b6f;
-  background-image: linear-gradient(to right, #ff6a00,
+  background-image: linear-gradient(to right,  #ff6a00,
   #ee0979);
   background-size: 100%;
   -webkit-background-clip: text;
@@ -752,3 +766,4 @@
     width: 100%;
   }
 }
+
