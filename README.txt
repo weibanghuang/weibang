@@ -4,4 +4,4 @@ This website was made using the following tutorial:
 
 https://youtu.be/3-2Pj5hxwrw.
 
-Brain Design on YouTube. 
+Brian Design on YouTube. 
