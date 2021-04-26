@@ -1,115 +1,353 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <link rel="icon" href="../weibang/weibang.png">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>weibang</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <!-- Navbar Section -->
-    <nav class="navbar">
-      <div class="navbar__container">
-        <div class="navbar__toggle" id="mobile-menu">
-          <span class="bar"></span> <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-        <ul class="navbar__menu">
-          <li class="navbar__item">
-            <a href="#home" class="navbar__links" id="home-page">Home</a>
-          </li>
-          <li class="navbar__item">
-            <a href="#about" class="navbar__links" id="about-page">About</a>
-          </li>
-          <li class="navbar__item">
-            <a href="#projects" class="navbar__links" id="projects-page">Projects</a
-            >
-            </li>   
-        </ul>
-      </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <div class="hero" id="home">
-      <div class="hero__container">
-        <p class="hero__description">System.out.println("What's up!");</p>
-        <h1 class="hero__heading">I am<span> WeiBang.</span></h1>
-   
-          <div class="footer__link--wrapper">
-            <div class="footer__link--items">
-              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/weibanghuang/" class="social__icon--link"><i class="fab fa-linkedin"> weibanghuang</i></a>
-            </div>
-            <div class="footer__link--items">
-              <a target="_blank" rel="noopener noreferrer" href="https://github.com/weibanghuang" class="social__icon--link"><i class="fab fa-github"> weibanghuang</i></a>
-            </div>
-            <div class="footer__link--items">
-              <a target="_blank" rel="noopener noreferrer" href="weibanghuang.pdf" class="social__icon--link"><i class="fas fa-file-pdf"></i> resume.pdf</i></a>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>WeiBang</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/weibang.png" rel="icon">
+  <link href="assets/img/weibang.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header-tops">
+    <div class="container">
+
+      <h1>WeiBang Huang</h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
+      <h2>System.out.println("<span>What's up!</span>");</h2>
+      <div class="social-links">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/weibanghuang/" class="linkedin"><i class="icofont-linkedin"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/weibanghuang" class="github"><i class="icofont-github"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="weibanghuang.pdf" class="resume"><i class="icofont-file-pdf"></i></a>
+
+      </div>
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Projects</a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href="weibanghuang.pdf">Resume</a></li>
+  
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+
+    <!-- ======= About Me ======= -->
+    <div class="about-me container">
+
+      <div class="section-title">
+        <h2>About</h2>
+        <p>Learn more about me</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4" data-aos="fade-right">
+          <img src="assets/img/me.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <h3>Stony Brook University 2020</h3>
+          <p class="font-italic">
+            Applied Mathematics and Statistics, B.S 
+            / Information Systems, B.S
+          </p>
+          <p class="font-italic">
+            I was extensively involved with:
+          </p>
+          
+          <div class="row">
+            <div class="col-lg-6">
+              <ul>
+                <li><i class="icofont-rounded-right"></i> <strong>Undergrad Teaching Assistantships</strong></li>
+                <li><i class="icofont-rounded-right"></i> <strong>Martial Arts Association</strong></li>
+                <li><i class="icofont-rounded-right"></i> <strong>Ultimate Frisbee Club Team</strong></li>
+                <li><i class="icofont-rounded-right"></i> <strong>Residential Safety Program</strong></li>
+              </ul>
             </div>
           </div>
-      
-        
+          <p>
+            I am currently studying Machine Learning. It is really awesome!
+          </p>
+        </div>
       </div>
-      <!-- Footer Section -->
-      
+
+    </div><!-- End About Me -->
+
+    
+
+    <!-- ======= Skills  ======= -->
+    <div class="skills container">
+
+      <div class="section-title">
+        <h2>Skills</h2>
+      </div>
+
+      <div class="row skills-content">
+
+        <div class="col-lg-6">
+
+          <div class="progress">
+            <span class="skill">JAVA<i class="val">80%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">PYTHON<i class="val">70%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">MYSQL<i class="val">60%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-6">
+
+          <div class="progress">
+            <span class="skill">PHOTOSHOP <i class="val">50%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">ILLUSTRATOR<i class="val">50%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div><!-- End Skills -->
+
+    <!-- ======= Interests ======= -->
+    <div class="interests container">
+
+      <div class="section-title">
+        <h2>Interests</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-4">
+          <div class="icon-box">
+            <i class="ri-music-2-fill" style="color: #ffbb2c;"></i>
+            <h3>Guitar</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class="ri-boxing-fill" style="color: #5578ff;"></i>
+            <h3>Kickboxing</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class="ri-checkbox-blank-circle-fill" style="color: #e80368;"></i>
+            <h3>Ultimate Frisbee</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+          <div class="icon-box">
+            <i class="ri-book-2-fill" style="color: #e361ff;"></i>
+            <h3>Reading</h3>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- End Interests -->
+
+ 
+
+  </section><!-- End About Section -->
+
+ 
+  <!-- ======= Services Section ======= -->
+  <section id="services" class="services">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Projects</h2>
+        <p>My Projects</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="icon-box">
+            <div class="icon"><i><a target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=com.weibang.nbyn">VIEW</a></i></div>
+            <h4><a href="">JAVA/XML</a></h4>
+            <p>Tic Tac Toe Android Game</p>
+            <p>This is a n-by-n online multiplayer game that is hosted by google firebase.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+          <div class="icon-box">
+            <div class="icon"><i><a target="_blank" rel="noopener noreferrer" href="https://weibang-project.herokuapp.com/">VIEW</a></i></div>
+            <h4><a href="">PYTHON/SQL/HTML</a></h4>
+            <p>Data Mining NBA Performance Charts</p>
+            <p>Track and compare the progress of NBA player performances from 2014-2020.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+          <div class="icon-box">
+            <div class="icon"><i><a target="_blank" rel="noopener noreferrer" href="https://weibang-nba.herokuapp.com/">VIEW</a></i></div>
+            <h4><a href="">PYTHON/SQL/HTML</a></h4>
+            <p>Data Mining NBA Player Comparison charts</p>
+            <p>Compare two NBA players based on their stats from 2014-2020.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="icon-box">
+            <div class="icon"><i><a target="_blank" rel="noopener noreferrer" href="https://dna-rna-sequencer.herokuapp.com/">VIEW</a></i></div>
+            <h4>PYTHON/HTML</h4>
+            <p>DNA/RNA Translator</p>
+            <p>Tool used to translate DNA/RNA sequences into amino acid sequences.</p>
+          </div>
+        </div>
 
     </div>
+  </section><!-- End Services Section -->
+ 
 
-    <!-- About Section -->
-    <div class="main" id="about">
-      <div class="main__container">
-        <div class="main__img--container">
-          <div class="main__img--card"></i></div>
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Contact</h2>
+        <p>Contact Me</p>
+      </div>
+
+      <div class="row mt-2">
+
+        <div class="col-md-6 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-map"></i>
+            <h3>My Address</h3>
+            <p>A108 Adam Street, New York, NY 535022</p>
+          </div>
         </div>
-        <div class="main__content">
-          <h1>ABOUT ME</h1>
-          <h2>Stony Brook University 2020</h2>
-          <p>Applied Mathematics and Statistics, B.S</p>
-          <p>Information Systems, B.S</p>
-          <p>I was extensively involved with:</p>
-          <p>1. Undergraduate Teaching Assistantships</p>
-          <p>2. Stony Brook Martial Arts Association</p>
-          <p>3. Stony Brook Ultimate Frisbee Club Team</p>
-          <p>4. Stony Brook Residential Safety Program</p>
+
+        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-share-alt"></i>
+            <h3>Social Profiles</h3>
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+              <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+              <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="icofont-skype"></i></a>
+              <a href="#" class="linkedin"><i class="icofont-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mt-4 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-envelope"></i>
+            <h3>Email Me</h3>
+            <p>contact@example.com</p>
+          </div>
+        </div>
+        <div class="col-md-6 mt-4 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-phone-call"></i>
+            <h3>Call Me</h3>
+            <p>+1 5589 55488 55</p>
+          </div>
         </div>
       </div>
+
+      <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
+        <div class="form-row">
+          <div class="col-md-6 form-group">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+            <div class="validate"></div>
+          </div>
+          <div class="col-md-6 form-group">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+            <div class="validate"></div>
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+          <div class="validate"></div>
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+          <div class="validate"></div>
+        </div>
+        <div class="mb-3">
+          <div class="loading">Loading</div>
+          <div class="error-message"></div>
+          <div class="sent-message">Your message has been sent. Thank you!</div>
+        </div>
+        <div class="text-center"><button type="submit">Send Message</button></div>
+      </form>
+
     </div>
-    
-    
-    <!-- Projects Section -->
-    <div class="projects" id="projects">
-      <h1>PROJECTS</h1>
-      <div class="projects__wrapper">
-        <div class="projects__card">
-          <h2>Online Multiplayer Tic Tac Toe Android Game</h2>
-          <p>Java/xml</p>
-          <div class="projects__btn"><button><a target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=com.weibang.nbyn" class="social__icon--link">View</a></button></div>
-        </div>
-        <div class="projects__card">
-          <h2>Data Mining NBA Performance Charts</h2>
-          <p>Python/SQL/html/css</p>
-          <div class="projects__btn"><button><a target="_blank" rel="noopener noreferrer" href="https://weibang-project.herokuapp.com/" class="social__icon--link">View</a></button></div>
-        </div>
-        <div class="projects__card">
-          <h2>Data Mining NBA Player Comparison</h2>
-          <p>Python/SQL/html/css</p>
-          <div class="projects__btn"><button><a target="_blank" rel="noopener noreferrer" href="https://weibang-nba.herokuapp.com/" class="social__icon--link">View</a></button></div>
-        </div>
-        <div class="projects__card">
-          <h2>DNA/RNA Translator</h2>
-          <p>Python/html/css</p>
-          <div class="projects__btn"><button><a target="_blank" rel="noopener noreferrer" href="https://dna-rna-sequencer.herokuapp.com/" class="social__icon--link">View</a></button></div>
-        </div>
-      </div>
+  </section><!-- End Contact Section -->
 
+  
 
-    <script src="app.js"></script>
-  </body>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
