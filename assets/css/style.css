@@ -617,7 +617,7 @@ section .container {
 }
 
 .services .icon-box .icon i {
-  color: #fff;
+  color: #DDA0DD;
   font-size: 20px;
 }
 
@@ -660,7 +660,7 @@ section .container {
 }
 
 .services .icon-box:hover .icon i {
-  color: #fff;
+  color: #DDA0DD;
 }
 
 .services .icon-box:hover .icon::before {
